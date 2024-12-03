@@ -19,6 +19,11 @@ app.get("/projects",(req,res)=>{
 app.get("/resume",(req,res)=>{
     res.render('resume.ejs');
 });
+
+app.get('/contact',(req,res)=>{
+    res.render('contact.ejs');
+
+});
 app.listen(port,()=>{
  console.log(`sever started at ${port}`)
 });
